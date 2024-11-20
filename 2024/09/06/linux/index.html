@@ -5,13 +5,13 @@
 <meta property="og:site_name" content="larissa的小宇宙">
 <meta property="og:description" content="[TOC] 文件管理与常用命令文件的目录配置&#x2F;：根目录，文件系统的顶层。  与开机有关&#x2F;home：用户主目录。&#x2F;bin：必备的二进制可执行文件。 最基本的命令 比如：cat mv mkdir&#x2F;sbin：系统管理二进制文件。&#x2F;etc：配置文件。 只有 root 可以更改，一般着只能查阅&#x2F;var：可变数据（日志、假脱机文件）。 与系统运行有关">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pic.imge.cc/2024/09/06/66d9e2247e414.gif">
+<meta property="og:image" content="https://pic.imge.cc/2024/09/06/66d9e18f5bbd4.jpg">
 <meta property="article:published_time" content="2024-09-06T09:55:05.000Z">
-<meta property="article:modified_time" content="2024-10-20T12:44:53.749Z">
+<meta property="article:modified_time" content="2024-11-20T03:18:30.098Z">
 <meta property="article:author" content="Larissa">
 <meta property="article:tag" content="linux 鸟哥的Linux 私房菜">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://pic.imge.cc/2024/09/06/66d9e2247e414.gif"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/09/06/linux/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+<meta name="twitter:image" content="https://pic.imge.cc/2024/09/06/66d9e18f5bbd4.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/09/06/linux/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
   localSearch: undefined,
@@ -56,7 +56,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2024-10-20 20:44:53'
+  postUpdate: '2024-11-20 11:18:30'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -174,7 +174,7 @@
     document.addEventListener('pjax:send', () => { preloader.initLoading() })
     document.addEventListener('pjax:complete', () => { preloader.endLoading() })
   }
-})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://pic.imge.cc/2024/09/05/66d9a7e532c09.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-layer-group"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></li><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-envelope"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 关于</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-paper-plane"></i><span> 关于本人</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imge.cc/2024/09/06/66d9e2247e414.gif')"><nav id="nav"><span id="blog-info"><a href="/" title="larissa的小宇宙"><span class="site-name">larissa的小宇宙</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-layer-group"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></li><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-envelope"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 关于</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-paper-plane"></i><span> 关于本人</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">linux</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-06T09:55:05.000Z" title="发表于 2024-09-06 17:55:05">2024-09-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-20T12:44:53.749Z" title="更新于 2024-10-20 20:44:53">2024-10-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/linux/">linux</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="linux"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>[TOC]</p>
+})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://pic.imge.cc/2024/09/05/66d9a7e532c09.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-layer-group"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></li><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-envelope"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 关于</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-paper-plane"></i><span> 关于本人</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imge.cc/2024/09/06/66d9e18f5bbd4.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="larissa的小宇宙"><span class="site-name">larissa的小宇宙</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-layer-group"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></li><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-envelope"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 关于</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-paper-plane"></i><span> 关于本人</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">linux</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-06T09:55:05.000Z" title="发表于 2024-09-06 17:55:05">2024-09-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-11-20T03:18:30.098Z" title="更新于 2024-11-20 11:18:30">2024-11-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/linux/">linux</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="linux"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>[TOC]</p>
 <h1 id="文件管理与常用命令"><a href="#文件管理与常用命令" class="headerlink" title="文件管理与常用命令"></a>文件管理与常用命令</h1><h2 id="文件的目录配置"><a href="#文件的目录配置" class="headerlink" title="文件的目录配置"></a>文件的目录配置</h2><p>&#x2F;：根目录，文件系统的顶层。  与开机有关<br>&#x2F;home：用户主目录。<br>&#x2F;bin：必备的二进制可执行文件。 最基本的命令 比如：cat mv mkdir<br>&#x2F;sbin：系统管理二进制文件。<br>&#x2F;etc：<code>配置文件</code>。 只有 root 可以更改，一般着只能查阅<br>&#x2F;var：可变数据（日志、假脱机文件）。 与系统运行有关<br>&#x2F;usr：用户程序和数据。 与系统操作有关<br>&#x2F;lib：共享库。 函数库<br>&#x2F;tmp：临时文件。<br>&#x2F;opt:  第三方软件 存储第三方<br>&#x2F;sbin :  开机过程所需要的指令</p>
 <p><code>起点是根目录,文件可以是本地也可以是网络文件，每个文件在此目录树中的文件是独一无二的</code></p>
 <h3 id="文件系统与目录树的关系"><a href="#文件系统与目录树的关系" class="headerlink" title="文件系统与目录树的关系"></a>文件系统与目录树的关系</h3><p>硬盘需要<code>分区，格式化，挂载</code>才能使用。</p>
@@ -794,28 +794,583 @@
 </li>
 </ul>
 <h2 id="gcc"><a href="#gcc" class="headerlink" title="gcc"></a>gcc</h2><p>gcc 编译器对文件有预处理，编译，汇编，链接。<br>（源文件.c）预处理： 展开头文件，去掉注释行，宏替换。<br>编译 ： 将源文件 编译 得到一个汇编文件<br>汇编：对文件进行汇编，得到一个二进制文件<br>链接： 对程序所需要的库进行链接，得到可执行的二进制文件 </p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">gcc -E test.c  -o test.i</span><br><span class="line"></span><br><span class="line">gcc -S test.i -o test.s</span><br><span class="line"></span><br><span class="line">gcc -c  test.s -o test.o</span><br><span class="line"></span><br><span class="line">gcc test.o -o test</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">进行预处理</span></span><br><span class="line">gcc -E test.c  -o test.i    </span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">编译预处理之后的文件</span></span><br><span class="line">gcc -S test.i -o test.s</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">对汇编文件进行汇编</span></span><br><span class="line">gcc -c  test.s -o test.o</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">将二进制文件与标准库进行连接，得到可执行的二进制文件</span></span><br><span class="line">gcc test.o -o test</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>指定文件名 -o 参数，源文件可以写在-o 之前或者之后</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>四个阶段</th>
+<th align="left">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>预处理阶段</td>
+<td align="left">处理头文件的引用，所以需要指明头文件的路径</td>
+</tr>
+<tr>
+<td>编译阶段</td>
+<td align="left">不需要头文件，库</td>
+</tr>
+<tr>
+<td>汇编阶段</td>
+<td align="left">与头文件和库的路径无关</td>
+</tr>
+<tr>
+<td>连接阶段</td>
+<td align="left">将目标与所需要的库进行连接，指定路径</td>
+</tr>
+</tbody></table>
 <p>相关参数：</p>
 <ul>
-<li>I   指定头文件的路径</li>
-<li>l  指定要使用的库</li>
+<li>I   指定头文件的路径  大写的i</li>
+<li>l  指定要使用的库 小写的l</li>
 <li>L 指定库的路径</li>
 <li>fPIC    生曾于位置无关的代码</li>
 <li>shared 生成共享目标文件</li>
 </ul>
-<h2 id="静态库与动态库"><a href="#静态库与动态库" class="headerlink" title="静态库与动态库"></a>静态库与动态库</h2><h3 id="静态库"><a href="#静态库" class="headerlink" title="静态库"></a>静态库</h3><p>静态库由程序ar 生成，lib 为前缀  .a 为后缀 </p>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="静态库与动态库"><a href="#静态库与动态库" class="headerlink" title="静态库与动态库"></a>静态库与动态库</h2><h3 id="静态库"><a href="#静态库" class="headerlink" title="静态库"></a>静态库</h3><p>静态库是一种打包文件的形式，将一组编译好的目标文件（<code>.o</code> 文件）合并到一个归档文件（<code>.a</code> 文件）中</p>
+<p>静态库由程序ar 生成，lib 为前缀  .a 为后缀 </p>
 <h4 id="生成静态链接库"><a href="#生成静态链接库" class="headerlink" title="生成静态链接库"></a>生成静态链接库</h4><p>生成静态库需要先对源文件进行汇编 ，（使用参数-c）得到二进制格式的目标文件（-o）然后通过参数 ar 将目标文件进行打包。<br>ar 有三个参数：</p>
 <ul>
 <li>c  创建一个库 ，不管库存不存在，都进行创建。</li>
 <li>s  创建目标文件索引</li>
-<li>r  在库中插入模块（替换），默认新的成员添加在库的结尾处，如果模块名在库中已经存在，则替换原来文件。<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ar rcs 静态库的名字（libxxx.a） 原材料 （.o）</span></span><br></pre></td></tr></table></figure></li>
+<li>r  在库中插入模块（替换），默认新的成员添加在库的结尾处，如果模块名在库中已经存在，则替换原来文件。<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">准备源文件.c</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">编译成二进制文件</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">gcc -c add.c sub.c</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">创建静态库</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ar rcs 静态库的名字（libxxx.a） 原材料 （.o）</span></span><br></pre></td></tr></table></figure></li>
 </ul>
-<h3 id="动态库"><a href="#动态库" class="headerlink" title="动态库"></a>动态库</h3><p>直接用gcc 命令，添加 -fPIC（在汇编的时候不是简单的 -c ） -shared  以.so 为后缀。</p>
-<h4 id="生成动态链接库"><a href="#生成动态链接库" class="headerlink" title="生成动态链接库"></a>生成动态链接库</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">gcc 源文件（*.c） -c -fPIC</span> </span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">把生成的目标文件.o 打包生成动态库</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">gcc -shared  与位置无关的目标文件（*.o） -o  动态库（libxx.so）</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="动态库"><a href="#动态库" class="headerlink" title="动态库"></a>动态库</h3><p>动态库是一种在运行时被加载的库。其文件格式为 <code>.so</code>（Shared Object）。</p>
+<p>直接用gcc 命令，添加 -fPIC（在汇编的时候不是简单的 -c ） -shared  以.so 为后缀。</p>
+<h4 id="生成动态链接库"><a href="#生成动态链接库" class="headerlink" title="生成动态链接库"></a>生成动态链接库</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">生成与位置无关的代码</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">gcc 源文件（*.c） -c -fPIC</span> </span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">把生成的目标文件.o 打包生成动态库</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">gcc -shared  与位置无关的目标文件（*.o） -o  动态库（libxx.so）</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>不管是静态库还是动态库，在用gcc 和源文件.c 的时候，一般都会使用到头文件，一般都需要指明头文件路径</p>
 </blockquote>
-<p>[TOC]</p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Larissa</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/09/06/linux/">http://example.com/2024/09/06/linux/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">larissa的小宇宙</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/linux-%E9%B8%9F%E5%93%A5%E7%9A%84Linux-%E7%A7%81%E6%88%BF%E8%8F%9C/">linux 鸟哥的Linux 私房菜</a></div><div class="post_share"><div class="social-share" data-image="https://pic.imge.cc/2024/09/06/66d9e2247e414.gif" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/09/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" title="数据结构与算法"><img class="cover" src="https://pic.imge.cc/2024/09/05/66d9a7e0eb7a0.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">数据结构与算法</div></div></a></div><div class="next-post pull-right"><a href="/2024/09/05/larinous-%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/" title="larinous 的碎碎念"><img class="cover" src="https://pic.imge.cc/2024/09/06/66d9e209cd2a2.gif" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">larinous 的碎碎念</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://pic.imge.cc/2024/09/05/66d9a7e532c09.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Larissa</div><div class="author-info__description">不是每个人都能功成名就,不妨在日常生活的点滴中寻找生命的意义</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Larissani/Larissani.github.io"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Larissani" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #000000;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的博客</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E4%B8%8E%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">文件管理与常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E7%9B%AE%E5%BD%95%E9%85%8D%E7%BD%AE"><span class="toc-number">1.1.</span> <span class="toc-text">文件的目录配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8E%E7%9B%AE%E5%BD%95%E6%A0%91%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">1.1.1.</span> <span class="toc-text">文件系统与目录树的关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E6%A0%91%E7%9A%84%E8%AF%BB%E5%8F%96%E6%96%B9%E5%BC%8F"><span class="toc-number">1.1.2.</span> <span class="toc-text">目录树的读取方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95%E7%9A%84%E5%B8%83%E5%B1%80"><span class="toc-number">1.1.3.</span> <span class="toc-text">文件和目录的布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%92%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="toc-number">1.1.4.</span> <span class="toc-text">绝对路径和相对路径</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6-%E6%9D%83%E9%99%90-%EF%BC%88Linux5-2%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">文件-权限 （Linux5.2）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E4%B8%8E%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">1.2.1.</span> <span class="toc-text">用户与用户组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E8%AF%A6%E8%A7%A3"><span class="toc-number">1.2.2.</span> <span class="toc-text">文件属性详解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="toc-number">1.2.3.</span> <span class="toc-text">修改文件权限</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="toc-number">1.2.3.1.</span> <span class="toc-text">数字表示法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="toc-number">1.2.3.2.</span> <span class="toc-text">文字表示法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%89%80%E6%9C%89%E8%80%85"><span class="toc-number">1.2.4.</span> <span class="toc-text">修改文件所有者</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E9%BB%98%E8%AE%A4%E6%9D%83%E9%99%90"><span class="toc-number">1.2.5.</span> <span class="toc-text">文件默认权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%9D%83%E9%99%90"><span class="toc-number">1.2.6.</span> <span class="toc-text">特殊权限</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#SUID"><span class="toc-number">1.2.6.1.</span> <span class="toc-text">SUID</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E4%B8%8E%E5%88%A0%E9%99%A4SUID"><span class="toc-number">1.2.6.1.1.</span> <span class="toc-text">如何设置与删除SUID</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B0%8F%E5%86%99s-%E4%B8%8E%E5%A4%A7%E5%86%99S-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.2.6.1.2.</span> <span class="toc-text">小写s 与大写S 的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%9F%A5%E6%89%BE%E6%89%80%E6%9C%89%E4%BA%86%E8%AE%BE%E7%BD%AESUID-%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-number">1.2.6.1.3.</span> <span class="toc-text">如何查找所有了设置SUID 的文件</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SGID"><span class="toc-number">1.2.6.2.</span> <span class="toc-text">SGID</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SBIT"><span class="toc-number">1.2.6.3.</span> <span class="toc-text">SBIT</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#suid-sgid-sbit-%E8%AE%BE%E5%AE%9A"><span class="toc-number">1.2.6.4.</span> <span class="toc-text">suid sgid sbit 设定</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%83%E4%B9%A0"><span class="toc-number">1.2.6.4.1.</span> <span class="toc-text">练习</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86"><span class="toc-number">1.3.</span> <span class="toc-text">文件及文件管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.4.</span> <span class="toc-text">文件类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D"><span class="toc-number">1.4.1.</span> <span class="toc-text">文件扩展名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%90%8D%E7%9A%84%E8%A7%84%E5%88%99"><span class="toc-number">1.4.2.</span> <span class="toc-text">文件名的规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-number">1.4.3.</span> <span class="toc-text">目录操作命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-number">1.4.4.</span> <span class="toc-text">文件操作命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#cat"><span class="toc-number">1.4.4.1.</span> <span class="toc-text">cat</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#less"><span class="toc-number">1.4.4.2.</span> <span class="toc-text">less</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#touch-%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6-%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%97%B6%E9%97%B4%E6%A0%87%E7%AD%BE"><span class="toc-number">1.4.4.3.</span> <span class="toc-text">touch   创建文件&#x2F;修改文件时间标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cp-%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95"><span class="toc-number">1.4.4.4.</span> <span class="toc-text">cp    复制文件和目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mv-%E7%A7%BB%E5%8A%A8%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95"><span class="toc-number">1.4.4.5.</span> <span class="toc-text">mv   移动文件和目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rm-%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95"><span class="toc-number">1.4.4.6.</span> <span class="toc-text">rm   删除文件和目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sort"><span class="toc-number">1.4.4.7.</span> <span class="toc-text">sort</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#diff"><span class="toc-number">1.4.4.8.</span> <span class="toc-text">diff</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#wc"><span class="toc-number">1.4.4.9.</span> <span class="toc-text">wc</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%90%9C%E7%B4%A2"><span class="toc-number">1.4.5.</span> <span class="toc-text">文件搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E9%80%9A%E9%85%8D%E7%AC%A6"><span class="toc-number">1.4.5.1.</span> <span class="toc-text">文件通配符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E5%91%BD%E4%BB%A4"><span class="toc-number">1.4.5.2.</span> <span class="toc-text">文件查找命令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6find%E5%91%BD%E4%BB%A4"><span class="toc-number">1.4.5.2.1.</span> <span class="toc-text">查找指定文件find命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#locate-%E5%91%BD%E4%BB%A4%EF%BC%88%E9%80%9F%E5%BA%A6%E5%BF%AB%EF%BC%89"><span class="toc-number">1.4.5.2.2.</span> <span class="toc-text">locate 命令（速度快）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#where-is-%E5%91%BD%E4%BB%A4"><span class="toc-number">1.4.5.2.3.</span> <span class="toc-text">where is 命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#g-rep-%E5%91%BD%E4%BB%A4"><span class="toc-number">1.4.5.2.4.</span> <span class="toc-text">g rep 命令</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5"><span class="toc-number">1.4.6.</span> <span class="toc-text">硬链接和符号链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E5%8E%8B%E7%BC%A9"><span class="toc-number">1.4.7.</span> <span class="toc-text">文件的压缩</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%BD%92%E6%A1%A3"><span class="toc-number">1.4.7.1.</span> <span class="toc-text">文件归档</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#tar"><span class="toc-number">1.4.7.1.1.</span> <span class="toc-text">tar</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#vim-%E4%BB%A5%E5%8F%8Ac-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7"><span class="toc-number">2.</span> <span class="toc-text">vim 以及c 开发工具</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#nano-%E7%9B%B8%E5%85%B3"><span class="toc-number">2.1.</span> <span class="toc-text">nano 相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4"><span class="toc-number">2.1.1.</span> <span class="toc-text">命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vim"><span class="toc-number">2.2.</span> <span class="toc-text">vim</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9A%82%E5%AD%98%E6%96%87%E4%BB%B6"><span class="toc-number">2.2.1.</span> <span class="toc-text">暂存文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%93%E5%B1%95%E5%8A%9F%E8%83%BD"><span class="toc-number">2.2.2.</span> <span class="toc-text">拓展功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gcc"><span class="toc-number">2.3.</span> <span class="toc-text">gcc</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E5%BA%93%E4%B8%8E%E5%8A%A8%E6%80%81%E5%BA%93"><span class="toc-number">2.4.</span> <span class="toc-text">静态库与动态库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E5%BA%93"><span class="toc-number">2.4.1.</span> <span class="toc-text">静态库</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93"><span class="toc-number">2.4.1.1.</span> <span class="toc-text">生成静态链接库</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E5%BA%93"><span class="toc-number">2.4.2.</span> <span class="toc-text">动态库</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93"><span class="toc-number">2.4.2.1.</span> <span class="toc-text">生成动态链接库</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/09/23/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80/" title="软件工程基础"><img src="https://pic.imge.cc/2024/09/06/66d9e1e8bfa67.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="软件工程基础"/></a><div class="content"><a class="title" href="/2024/09/23/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80/" title="软件工程基础">软件工程基础</a><time datetime="2024-09-23T07:51:30.000Z" title="发表于 2024-09-23 15:51:30">2024-09-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" title="数据结构与算法"><img src="https://pic.imge.cc/2024/09/05/66d9a7e0eb7a0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据结构与算法"/></a><div class="content"><a class="title" href="/2024/09/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" title="数据结构与算法">数据结构与算法</a><time datetime="2024-09-09T07:35:48.000Z" title="发表于 2024-09-09 15:35:48">2024-09-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/06/linux/" title="linux"><img src="https://pic.imge.cc/2024/09/06/66d9e2247e414.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="linux"/></a><div class="content"><a class="title" href="/2024/09/06/linux/" title="linux">linux</a><time datetime="2024-09-06T09:55:05.000Z" title="发表于 2024-09-06 17:55:05">2024-09-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/05/larinous-%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/" title="larinous 的碎碎念"><img src="https://pic.imge.cc/2024/09/06/66d9e209cd2a2.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="larinous 的碎碎念"/></a><div class="content"><a class="title" href="/2024/09/05/larinous-%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/" title="larinous 的碎碎念">larinous 的碎碎念</a><time datetime="2024-09-05T08:46:14.000Z" title="发表于 2024-09-05 16:46:14">2024-09-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/05/python/" title="python"><img src="https://pic.imge.cc/2024/09/05/66d9a7e0eb7a0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python"/></a><div class="content"><a class="title" href="/2024/09/05/python/" title="python">python</a><time datetime="2024-09-05T08:23:12.000Z" title="发表于 2024-09-05 16:23:12">2024-09-05</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://pic.imge.cc/2024/09/06/66d9e2247e414.gif')"><div id="footer-wrap"><div class="copyright">&copy;2024 By Larissa</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欢迎来到larissa的cs小宇宙!</div></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<h4 id="指定动态库路径"><a href="#指定动态库路径" class="headerlink" title="指定动态库路径"></a>指定动态库路径</h4><ul>
+<li><p>使用环境变量</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export LD_LIBRARY_PATH=/path/to/lib:$LD_LIBRARY_PATH</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>/path/to/lib</code> 是动态库所在目录</p>
+<p><code>$LD_LIBRARY_PATH</code> 用于保留之前的路径配置 </p>
+</blockquote>
+</li>
+<li><p>配置文件&#x2F;etc&#x2F;ld.so.conf</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">编辑</span></span><br><span class="line">sudo vi /etc/ld.so.conf</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">将动态库的路径写入</span></span><br><span class="line">/path/to/lib</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">更新动态连接器缓存</span></span><br><span class="line">sudo ldconfig</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">运行文件</span></span><br><span class="line">./my_program</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><p>安装之后进行配置</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global uers.email &quot;Your Email&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h3><p>版本库就是仓库，目录。里面所有文件都可以被git 管理</p>
+<ul>
+<li>创建版本库以及初始化</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">创建一个新库</span></span><br><span class="line">mkdir newrepository</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">将其编程git 可以管理的仓库</span></span><br><span class="line">git init</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>把文件添加到版本库(假设我已经写好了一个readme.txt 的文件)</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add readme,txt</span><br><span class="line">git commit -m &quot;wrote a readme file&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>第一步，用git add 告诉git 将文件添加到仓库中</p>
+<p>第二部，用git commit 告诉git将文件提交到仓库  -m <message></p>
+<p>commit 可以一次提交多个文件，可以add 多个文件之后，一次性将提交</p>
+<p><strong>添加文件的时候</strong> 注意文件和git 命令都是在git仓库（目录）下</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="时光机穿梭"><a href="#时光机穿梭" class="headerlink" title="时光机穿梭"></a>时光机穿梭</h3><ul>
+<li><p>更改文件之后</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">可以查肯当前仓库的状态(会告诉我们什么被修改了)</span></span><br><span class="line">git status</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">如果想看修改了什么内容</span></span><br><span class="line">git diff readme.txt</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">提交，仍是两个操作</span></span><br><span class="line">git add readme.txt</span><br><span class="line">git commit -m &lt;message&gt;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>版本回退</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">查看所有的版本记录</span></span><br><span class="line">git log</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">使用git reset 命令回到上一个版本</span></span><br><span class="line">git reset --head HEAD^</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>每一个版本都是有commit id 的</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git log --pretty=oneline</span><br><span class="line">1094adb7b9b3807259d8cb349e7df1d4d6477073 (HEAD -&gt; master) append GPL</span><br><span class="line">e475afc93c209a690c39c13a46716e8fa000c366 add distributed</span><br><span class="line">eaadf4e385e865d25c48e7ca9c8395c3f7dfaef0 wrote a readme file</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>在git 中，我们用head 表示当前版本。</p>
+<p>上一个版本就是<code>HEAD^</code>，上上一个版本就是<code>HEAD^^</code>，当然往上100个版本写100个<code>^</code>比较容易数不过来，所以写成<code>HEAD~100</code></p>
+</blockquote>
+<blockquote>
+<p><code>--hard</code>参数有啥意义？<code>--hard</code>会回退到上个版本的已提交状态，而<code>--soft</code>会回退到上个版本的未提交状态，<code>--mixed</code>会回退到上个版本已添加但未提交的状态。</p>
+</blockquote>
+<p>当我们回退版本之后又想恢复，一定是要找到commit id 的</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">git reflog 用来记录每一次命令</span></span><br><span class="line">git reflog</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="makefile"><a href="#makefile" class="headerlink" title="makefile"></a>makefile</h2><h3 id="规则"><a href="#规则" class="headerlink" title="规则"></a>规则</h3><figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line"><span class="section">target1,target2,target3...:depend1,depend2,depend3...</span></span><br><span class="line">		command</span><br></pre></td></tr></table></figure>
+<p>每一条规则是由三个部分组成：目标，依赖，命令</p>
+<ul>
+<li>命令：当前规则的动作，一般情况下这一个动作就是一个shell 命令。动作可以是多个，每个都占据一行。要缩进</li>
+<li>依赖 </li>
+<li>目标： 在执行规则中生成与目标同名的文件，可以有多个目标，如果只执行命令，不生成目标文件，那么这样的目标称之伪目标</li>
+</ul>
+<h3 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h3><p>在调用 make 命令编译程序的时候，make 会首先找到 Makefile 文件中的第 1 个规则，分析并执行相关的动作。</p>
+<figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line"><span class="comment"># makefile</span></span><br><span class="line"><span class="comment"># 规则之间的嵌套</span></span><br><span class="line"><span class="comment"># 规则1</span></span><br><span class="line"><span class="section">app:a.o b.o c.o</span></span><br><span class="line">	gcc a.o b.o c.o -o app</span><br><span class="line"><span class="comment"># 规则2</span></span><br><span class="line"><span class="section">a.o:a.c</span></span><br><span class="line">	gcc -c a.c</span><br><span class="line"><span class="comment"># 规则3</span></span><br><span class="line"><span class="section">b.o:b.c</span></span><br><span class="line">	gcc -c b.c</span><br><span class="line"><span class="comment"># 规则4</span></span><br><span class="line"><span class="section">c.o:c.c</span></span><br><span class="line">	gcc -c c.c</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>知识点拓展:<br>如果想要执行 makefile 中非第一条规则对应的命令, 那么就不能直接 make, 需要将那条规则的目标也写到 make的后边, 比如只需要执行规则3中的命令, 就需要: make b.o。</p>
+</blockquote>
+<p>make 命令执行的时候会根据文件的时间戳判定是否执行makefile文件中相关规则中的命令。</p>
+<ul>
+<li><p>目标是通过依赖生成的，因此正常情况下：目标时间戳 &gt; 所有依赖的时间戳, 如果执行 make<br>命令的时候检测到规则中的目标和依赖满足这个条件, 那么规则中的命令就不会被执行。</p>
+</li>
+<li><p>当依赖文件被更新了, 文件时间戳也会随之被更新, 这时候 目标时间戳 &lt; 某些依赖的时间戳, 在这种情况下目标文件会通过规则中的命令被重新生成。</p>
+</li>
+<li><p>如果规则中的目标对应的文件根本就不存在， 那么规则中的命令肯定会被执行。</p>
+</li>
+</ul>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>makefile 的变量分为三种，自定义变量，预定义变量和自动变量</p>
+<h4 id="自定义变量："><a href="#自定义变量：" class="headerlink" title="自定义变量："></a>自定义变量：</h4><p>创建变量名并进行赋值，在需要的时候用$ 取出</p>
+<figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line">变量名 =  变量值</span><br><span class="line">obj = add.o div.o mainn.o sub.o</span><br><span class="line"><span class="variable">$(obj)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 这是一个规则，普通写法</span></span><br><span class="line"><span class="section">calc:add.o  div.o  main.o  mult.o  sub.o</span></span><br><span class="line">        gcc  add.o  div.o  main.o  mult.o  sub.o -o calc</span><br><span class="line">        </span><br><span class="line"><span class="comment"># 这是一个规则，里边使用了自定义变量</span></span><br><span class="line">obj=add.o  div.o  main.o  mult.o  sub.o</span><br><span class="line">target=calc</span><br><span class="line"><span class="variable">$(target)</span>:<span class="variable">$(obj)</span></span><br><span class="line">        gcc  <span class="variable">$(obj)</span> -o <span class="variable">$(target)</span></span><br></pre></td></tr></table></figure>
+<h4 id="预定义变量"><a href="#预定义变量" class="headerlink" title="预定义变量"></a>预定义变量</h4><h4 id="自动变量"><a href="#自动变量" class="headerlink" title="自动变量"></a>自动变量</h4><p>makefile 的规则语句中会出现目标文件和依赖路径，自动变量用来表示在指令中的目标文件和依赖文件</p>
+<table>
+<thead>
+<tr>
+<th align="left">变量</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">$*</td>
+<td align="left">表示目标文件，不包含文件的拓展名 ，可能有重复文件</td>
+</tr>
+<tr>
+<td align="left">$+</td>
+<td align="left">表示所有依赖文件</td>
+</tr>
+<tr>
+<td align="left">$&lt;</td>
+<td align="left">第一个依赖文件</td>
+</tr>
+<tr>
+<td align="left">$^</td>
+<td align="left">依赖项中，所有不重复的依赖文件</td>
+</tr>
+<tr>
+<td align="left">$ @</td>
+<td align="left">表示目标文件，包含文件的拓展名</td>
+</tr>
+</tbody></table>
+<h3 id="模式匹配"><a href="#模式匹配" class="headerlink" title="模式匹配"></a>模式匹配</h3><figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line"><span class="comment">#模式匹配 -&gt; 通过一个公式, 代表若干个满足条件的规则</span></span><br><span class="line">依赖有一个, 后缀为.c, 生成的目标是一个 .o 的文件, % 是一个通配符, 匹配的是文件名</span><br><span class="line"><span class="section">%.o:%.c</span></span><br><span class="line">	gcc <span class="variable">$&lt;</span> -c</span><br></pre></td></tr></table></figure>
+
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><blockquote>
+<p>makefile中有很多函数并且所有的函数都是有返回值的。makefile中函数的格式和C&#x2F;C++中函数也不同，其写法是这样的： $(函数名 参数1, 参数2, 参数3, …)，主要目的是让我们能够快速方便的得到函数的返回值。<br>两个 makefile 中使用频率比较高的函数：wildcard和patsubst。</p>
+</blockquote>
+<h4 id="wildcard"><a href="#wildcard" class="headerlink" title="wildcard"></a>wildcard</h4><p>这个函数的目标作用是获取指定目录下指定类型的文件名，返回值是以空格分隔的，指定目录下的所有复合条件的<strong>文件名列表</strong></p>
+<figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 该函数的参数只有一个, 但是这个参数可以分成若干个部分, 通过空格间隔</span></span><br><span class="line"><span class="variable">$(<span class="built_in">wildcard</span> PATTERN...)</span></span><br><span class="line">	参数:	指定某个目录, 搜索这个路径下指定类型的文件，比如： *.c</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用举例: 分别搜索三个不同目录下的 .c 格式的源文件</span></span><br><span class="line">src = <span class="variable">$(<span class="built_in">wildcard</span> /home/robin/a/*.c /home/robin/b/*.c *.c)</span>  <span class="comment"># *.c == ./*.c</span></span><br><span class="line"><span class="comment"># 返回值: 得到一个大的字符串, 里边有若干个满足条件的文件名, 文件名之间使用空格间隔</span></span><br><span class="line">/home/robin/a/a.c /home/robin/a/b.c /home/robin/b/c.c /home/robin/b/d.c e.c f.c	</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
+<h4 id="patsubst"><a href="#patsubst" class="headerlink" title="patsubst"></a>patsubst</h4><p>按照特定模式<strong>替换</strong>指定文件名的后缀</p>
+<figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 有三个参数, 参数之间使用 逗号间隔</span></span><br><span class="line"><span class="variable">$(<span class="built_in">patsubst</span> &lt;pattern&gt;,&lt;replacement&gt;,&lt;text&gt;)</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="用户和群组管理"><a href="#用户和群组管理" class="headerlink" title="用户和群组管理"></a>用户和群组管理</h1><p>根用户（root）超级用户：<br>最高权限，对系统进行任何操作。root 用户的用户数据储存在&#x2F;root 下<br>系统用户：<br>用系统或者相关程序创建，用于执行服务等系统任务。不能随意删除。<br>普通用户：<br>对自己的家目录下的文件进行操作，所有普通用户的家目录都在 &#x2F;home&#x2F; 下，位于 &#x2F;home&#x2F;username&#x2F; 的位置，其中 username 是用户名。普通用户无法直接修改系统配置，也无法为系统环境安装或卸载软件。在Linux系统中，创建用户账户的同时也会创建一个与用户同名的群组，该群组是用户的主群组。</p>
+<blockquote>
+<p>root用户的UID为0：系统用户的UID从1到999；普通用户的UID可以在创建时由管<br>理员指定，如果不指定，用户的UID默认从1000开始顺序编号。 </p>
+</blockquote>
+<h2 id="用户登录过程"><a href="#用户登录过程" class="headerlink" title="用户登录过程"></a>用户登录过程</h2><ul>
+<li>查找用户信息：在 &#x2F;etc&#x2F;passwd 中确认用户名是否存在，并读取 UID、GID、家目录和默认 Shell。（用vim 或者cat 打开文件）<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">larissa:x:1001:1001::/home/larissa:/bin/bash</span><br><span class="line">larissa：用户名。</span><br><span class="line">x：密码（这里为占位符，实际密码在 /etc/shadow 文件中）。</span><br><span class="line">1001：用户 ID（UID）。</span><br><span class="line">1001：组 ID（GID）。</span><br><span class="line">/home/larissa：用户的家目录。</span><br><span class="line">/bin/bash：默认 Shell 程序。</span><br></pre></td></tr></table></figure></li>
+<li>验证密码：在 &#x2F;etc&#x2F;shadow 中找到该用户的加密密码，与用户输入的密码进行匹配。这个密码只有root 有权利访问</li>
+<li>启动 Shell：密码验证通过后，系统会进入用户家目录，并启动默认的 Shell 环境，使用户可以开始操作系统。</li>
+</ul>
+<h2 id="新建用户过程"><a href="#新建用户过程" class="headerlink" title="新建用户过程"></a>新建用户过程</h2><p>useradd （以root 身份 或者sudo）<br>用于创建新用户可以指定用户的 UID、GID、主目录、Shell、附属群组等详细信息。常见的选项包括：</p>
+<table>
+<thead>
+<tr>
+<th align="left">选项</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">-u</td>
+<td align="left">指定用户的 UID。</td>
+</tr>
+<tr>
+<td align="left">-g</td>
+<td align="left">指定用户的主群组</td>
+</tr>
+<tr>
+<td align="left">-G</td>
+<td align="left">指定用户的附属群组（可以有多个群组，用逗号分隔</td>
+</tr>
+<tr>
+<td align="left">-d</td>
+<td align="left">指定用户的主目录路径。</td>
+</tr>
+<tr>
+<td align="left">-s</td>
+<td align="left">指定用户的登录 Shell</td>
+</tr>
+<tr>
+<td align="left">-p</td>
+<td align="left">设置用户的加密密码。</td>
+</tr>
+<tr>
+<td align="left">-f</td>
+<td align="left">设置账户过期后多少天禁用用户账户，-1 表示账户永不过期。</td>
+</tr>
+<tr>
+<td align="left">-m</td>
+<td align="left">创建用户的主目录。</td>
+</tr>
+<tr>
+<td align="left">-M</td>
+<td align="left">不创建用户的主目录。</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>-p 后的密码应为哈希：理想情况下，-p 后面应该是已经加密的密码，而不是明文密码<br>密码的设置：推荐先使用 useradd 创建用户，再使用 passwd user3 来设置密码，这样密码会被加密存储。</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">[root@server1 ~]# useradd -u 1010 -d /home/user3 -s /bin/bash -p 123456 -f -1 user3</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>系统在账户创建过程<br>在 &#x2F;etc&#x2F;passwd 里面建立一行与帐号相关的资料，包括建立 UID&#x2F;GID&#x2F;家<br>目录等；<br>在 &#x2F;etc&#x2F;shadow 里面将此帐号的密码相关参数填入，但是尚未有密码；<br>在 &#x2F;etc&#x2F;group 里面加入一个与帐号名称一模一样的群组名称；<br>在 &#x2F;home 底下建立一个与帐号同名的目录作为使用者家目录，且权限为<br>700</p>
+</blockquote>
+<ul>
+<li>id   查看用户的UID、GID和用户所属群组的信息，如果不指定用户，则显示当前用户的<br>相关信息。命令格式：id <username></li>
+<li>whoami  查看当前用户名 </li>
+<li>w 查看当前登录系统用户和详细信息</li>
+</ul>
+<h2 id="设置-password"><a href="#设置-password" class="headerlink" title="设置 password"></a>设置 password</h2><p>超级用户可以为自己和其他用户设置口令，而普通用户只能为自己设置口令</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">passwd [选项] [username]</span><br></pre></td></tr></table></figure>
+<p>如果不指定 username，则默认修改当前用户的口令。</p>
+<table>
+<thead>
+<tr>
+<th align="left">选项</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">-l</td>
+<td align="left">锁定用户账户，禁止用户登录</td>
+</tr>
+<tr>
+<td align="left">-u</td>
+<td align="left">解锁之前被锁定的用户账户。</td>
+</tr>
+<tr>
+<td align="left">-d</td>
+<td align="left">将用户口令设置为空，允许用户在不输入口令的情况下登录，但这种情况下安全性较低</td>
+</tr>
+<tr>
+<td align="left">-f</td>
+<td align="left">强制用户在下次登录时必须修改口令。</td>
+</tr>
+<tr>
+<td align="left">-n</td>
+<td align="left">设置口令的最短存活期，指定用户在修改口令后，最少要保持该口令的天数。</td>
+</tr>
+<tr>
+<td align="left">-x</td>
+<td align="left">设置口令的最长存活期，超过这个天数用户必须更改口令</td>
+</tr>
+<tr>
+<td align="left">-w</td>
+<td align="left">在口令到期前多少天发出警告。</td>
+</tr>
+<tr>
+<td align="left">-i</td>
+<td align="left">指定口令过期后多少天账户会被停用。</td>
+</tr>
+<tr>
+<td align="left">-s</td>
+<td align="left">显示账户口令的简短状态信息。</td>
+</tr>
+</tbody></table>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo &quot;3279416&quot; | passwd --stdin larissa</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>超级用户修改自己的口令：作为root用户，可以直接执行 passwd 命令来修改自己的口令。<br>超级用户修改其他用户的口令：例如，使用 passwd user1 修改用户 user1 的口令，不需要输入 user1 的原口令。<br>普通用户修改口令：普通用户执行 passwd 命令时，系统会要求输入原口令，以验证身份。 </p>
+</blockquote>
+<h2 id="修改用户账户-usermod"><a href="#修改用户账户-usermod" class="headerlink" title="修改用户账户 usermod"></a>修改用户账户 usermod</h2><p>root 用户更改所有,自己更改自己的 </p>
+<table>
+<thead>
+<tr>
+<th align="left">选项</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">-c</td>
+<td align="left">设置或修改用户的备注信息，这通常用于描述用户的用途或身份。</td>
+</tr>
+<tr>
+<td align="left">-d</td>
+<td align="left">指定用户的新主目录。结合 -m 参数使用时，会将旧的主目录中的数据自动迁移到新的主目录中。</td>
+</tr>
+<tr>
+<td align="left">-e</td>
+<td align="left">设置账户到期的日期，格式为 YYYY-MM-DD。到期后用户将无法登录。</td>
+</tr>
+<tr>
+<td align="left">-g</td>
+<td align="left">修改用户的主群组。</td>
+</tr>
+<tr>
+<td align="left">-G</td>
+<td align="left">修改用户的扩展群组，可以将用户添加到多个群组，群组之间用逗号分隔。</td>
+</tr>
+<tr>
+<td align="left">-L</td>
+<td align="left">锁定用户，禁止其登录系统。用户被锁定后，无法使用账户登录。</td>
+</tr>
+<tr>
+<td align="left">-U</td>
+<td align="left">解锁用户，允许其登录系统。</td>
+</tr>
+<tr>
+<td align="left">-s</td>
+<td align="left">修改用户的默认登录 shell，例如，可以将其改为 &#x2F;bin&#x2F;tcsh</td>
+</tr>
+<tr>
+<td align="left">-u</td>
+<td align="left">修改用户的 UID（用户标识符），该 UID 必须是唯一的。</td>
+</tr>
+</tbody></table>
+<h2 id="删除用户账户-userdel"><a href="#删除用户账户-userdel" class="headerlink" title="删除用户账户 userdel"></a>删除用户账户 userdel</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">删除用户, 添加参数 -r 就可以一并删除用户的家目录了</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">sudo</span> userdel 用户名 -r</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="禁用和恢复用户账户"><a href="#禁用和恢复用户账户" class="headerlink" title="禁用和恢复用户账户"></a>禁用和恢复用户账户</h2><p>在前面的passwd 和usermod  中有各自的禁用与恢复方法,手动修改&#x2F;etc&#x2F;passwd 也能禁用<br>在前面加上  *\  即可</p>
+<h2 id="群组有关操作"><a href="#群组有关操作" class="headerlink" title="群组有关操作"></a>群组有关操作</h2><p>管理员（root）用户下操作，或者在普通用户下借助管理员权限完成该操作。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">添加与删除</span> </span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">sudo</span> groupadd  组名</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">sudo</span> groupdel  组名</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">修改 groupmod  -g 修改GID   -n 修改组名</span> </span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">sudo</span> groupmod</span> </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在组群中添加用户 gpasswd  (root 群管理员可以进行操作)</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">-a 将用户添加到指定的组中</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">-d 将用户从指定的组中删除</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">-r 取消群组的密码</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">-A 指定群组的管理员</span></span><br><span class="line"><span class="meta prompt_">$</span><span class="language-bash"><span class="built_in">sudo</span> gpasswd - -a 人 组名</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>初始组群与有效组群<br>初始群组：创建用户时，系统为其分配一个初始群组（通常是与用户名相同的群组），该群组的GID是用户的主群组。<br>有效群组：用户可以加入多个附属群组，拥有这些群组的权限。在创建文件时，文件的群组将默认为用户当前有效群组。<br>查看有效组群与切换组群: groups    newgrp  </p>
+</blockquote>
+<h2 id="切换用户"><a href="#切换用户" class="headerlink" title="切换用户"></a>切换用户</h2><p>用户切换需要使用su或者su -。使用su只切换用户, 当前的工作目录不会变化, 但是使用 su -不仅会切换用户也会切换工作目录, 工作目录切换为当前用户的家目录。<br>从用户A切换到用户B， 如果还想再切换回用户A，可以直接使用 exit。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">只切换用户, 工作目录不变</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">su 用户名</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">切换用户和工作目录, 会自动跳转到当前用户的家目录中</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">su - 用户名</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">回到原来的用户</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">exit</span></span> </span><br></pre></td></tr></table></figure>
+
+<h2 id="给普通用户添加sudo"><a href="#给普通用户添加sudo" class="headerlink" title="给普通用户添加sudo"></a>给普通用户添加sudo</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 1. 切换到root用户</span><br><span class="line">$ su root</span><br><span class="line">Password: 		# 输入root用户的密码</span><br><span class="line"></span><br><span class="line"># 2. 修改文件权限, 暴力一点没有关系, 反正还需要改回去, 直接 777 就行</span><br><span class="line">$ chmod 777 sudoers</span><br><span class="line"></span><br><span class="line"># 3. 使用 vim 打开这个文件</span><br><span class="line">$ vim sudoers</span><br><span class="line"></span><br><span class="line"># 4. 在文件中找到这一行, 在文件偏尾部的位置</span><br><span class="line">root    ALL=(ALL)       ALL</span><br><span class="line"></span><br><span class="line"># 5. 照葫芦画瓢, 在下边新添加一行内容如下:</span><br><span class="line">root    ALL=(ALL)       ALL           # 原来的内容</span><br><span class="line">sanji    ALL=(ALL)       ALL          # 新添加的行, 将用户名指定为 sanji 即可</span><br><span class="line"></span><br><span class="line"># 6. 保存退出 (先按esc, 然后输入 :wq)</span><br><span class="line"># 7. 将文件改回原来的权限</span><br><span class="line">$ chmod 400 sudoers</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="批量创建用户与修改用户密码"><a href="#批量创建用户与修改用户密码" class="headerlink" title="批量创建用户与修改用户密码"></a>批量创建用户与修改用户密码</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ newusers userlist.txt</span><br><span class="line">$ cat mima | chpasswd</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><h3 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h3><p>正则表达式主要依赖于元字符。<br>元字符不代表他们本身的字面意思，他们都有特殊的含义。一些元字符写在方括号中的时候有一些特殊的意思。以下是一些元字符的介绍：</p>
+<table>
+<thead>
+<tr>
+<th align="center">元字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">.</td>
+<td>句号匹配任意单个字符除了换行符。</td>
+</tr>
+<tr>
+<td align="center">[ ]</td>
+<td>字符种类。匹配方括号内的任意字符（方括号中的句号就表示句号）。  只匹配单个字符</td>
+</tr>
+<tr>
+<td align="center">[^ ]</td>
+<td>否定的字符种类。匹配除了方括号里的任意字符</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td>匹配&gt;&#x3D;0个重复的在*号之前的字符。</td>
+</tr>
+<tr>
+<td align="center">+</td>
+<td>匹配&gt;&#x3D;1个重复的+号前的字符。</td>
+</tr>
+<tr>
+<td align="center">?</td>
+<td>标记?之前的字符为可选.</td>
+</tr>
+<tr>
+<td align="center">{n,m}</td>
+<td>匹配num个大括号之前的字符或字符集 (n &lt;&#x3D; num &lt;&#x3D; m).</td>
+</tr>
+<tr>
+<td align="center">(xyz)</td>
+<td>字符集，匹配与 xyz 完全相等的字符串.</td>
+</tr>
+<tr>
+<td align="center">&#124;</td>
+<td>或运算符，匹配符号前或后的字符.</td>
+</tr>
+<tr>
+<td align="center">&#92;</td>
+<td>转义字符,用于匹配一些保留的字符 <code>[ ] ( ) &#123; &#125; . * + ? ^ $ \ &#124;</code></td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td>从开始行开始匹配.</td>
+</tr>
+<tr>
+<td align="center">$</td>
+<td>从末端开始匹配.</td>
+</tr>
+</tbody></table>
+<h3 id="简写字符集"><a href="#简写字符集" class="headerlink" title="简写字符集"></a>简写字符集</h3><table>
+<thead>
+<tr>
+<th align="center">简写</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">.</td>
+<td>除换行符外的所有字符</td>
+</tr>
+<tr>
+<td align="center">\w</td>
+<td>匹配所有字母数字，等同于 <code>[a-zA-Z0-9_]</code></td>
+</tr>
+<tr>
+<td align="center">\W</td>
+<td>匹配所有非字母数字，即符号，等同于： <code>[^\w]</code></td>
+</tr>
+<tr>
+<td align="center">\d</td>
+<td>匹配数字： <code>[0-9]</code></td>
+</tr>
+<tr>
+<td align="center">\D</td>
+<td>匹配非数字： <code>[^\d]</code></td>
+</tr>
+<tr>
+<td align="center">\s</td>
+<td>匹配所有空格字符，等同于： <code>[\t\n\f\r\p&#123;Z&#125;]</code></td>
+</tr>
+<tr>
+<td align="center">\S</td>
+<td>匹配所有非空格字符： <code>[^\s]</code></td>
+</tr>
+<tr>
+<td align="center">\f</td>
+<td>匹配一个换页符</td>
+</tr>
+<tr>
+<td align="center">\n</td>
+<td>匹配一个换行符</td>
+</tr>
+<tr>
+<td align="center">\r</td>
+<td>匹配一个回车符</td>
+</tr>
+<tr>
+<td align="center">\t</td>
+<td>匹配一个制表符</td>
+</tr>
+<tr>
+<td align="center">\v</td>
+<td>匹配一个垂直制表符</td>
+</tr>
+<tr>
+<td align="center">\p</td>
+<td>匹配 CR&#x2F;LF（等同于 <code>\r\n</code>），用来匹配 DOS 行终止符</td>
+</tr>
+</tbody></table>
+<h3 id="sed-编译器"><a href="#sed-编译器" class="headerlink" title="sed 编译器"></a>sed 编译器</h3><p>按行处理数据，适合添加、删除、替换整行内容</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">sed [选项] &#x27;&lt;script&gt;&#x27; 文件名</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>其中，<code>&lt;script&gt;</code> 是指 <code>sed</code> 脚本，用来定义要进行的操作。常见选项包括：</p>
+<ul>
+<li><code>-e</code>：直接在命令行中指定 <code>sed</code> 脚本。</li>
+<li><code>-f</code>：从文件中读取 <code>sed</code> 脚本。</li>
+<li><code>-n</code>：安静模式，仅输出经过处理的内容。</li>
+<li><code>-i</code>：直接修改文件内容（<strong>谨慎使用</strong>）</li>
+</ul>
+<h4 id="常用的操作命令"><a href="#常用的操作命令" class="headerlink" title="常用的操作命令"></a>常用的操作命令</h4><ul>
+<li><code>a</code>：在指定行后添加新行。</li>
+<li><code>c</code>：替换指定行。</li>
+<li><code>d</code>：删除指定行。</li>
+<li><code>i</code>：在指定行前插入新行。</li>
+<li><code>p</code>：打印指定行内容。</li>
+<li><code>s</code>：搜索并替换。</li>
+</ul>
+<blockquote>
+<p>一般打印输出的时候需要使用 <code>-n</code>    </p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">删除2到5行</span></span><br><span class="line">nl /etc/passwd | sed &#x27;2,5d&#x27;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在2行后添加新行</span></span><br><span class="line">nl /etc/passwd | sed &#x27;2a Hello World&#x27;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在2行前添加新行</span></span><br><span class="line">nl /etc/passwd | sed &#x27;2i Hello World&#x27;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">替换</span></span><br><span class="line">nl passwd | sed &#x27;2,5c No 2-5 number&#x27;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">将root 替换</span></span><br><span class="line">nl /etc/passwd | sed &#x27;s/root/sroot/g&#x27;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">搜索并显示</span></span><br><span class="line">nl /etc/passwd | sed -n &#x27;/root/p&#x27;</span><br><span class="line">nl /etc/passwd | sed &#x27;/root/d&#x27;</span><br><span class="line">nl /etc/passwd | sed -n &#x27;/root/&#123;s/bash/blueshell/;p;q&#125;&#x27;</span><br><span class="line">sed -i &#x27;s/\.$/\!/g&#x27; regular.txt</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>在 <code>sed</code> 中，通过这种模式 <code>/pattern/&#123;commands&#125;</code>，可以使 <code>&#123;&#125;</code> 中的命令仅作用于匹配该模式的行，而不匹配的行则跳过。</p>
+</blockquote>
+<h3 id="awk"><a href="#awk" class="headerlink" title="awk"></a>awk</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">awk &#x27;条件 &#123; 动作 &#125;&#x27; 文件名</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>条件</strong>：可以是任意表达式，满足该条件的行会执行 <code>&#123;&#125;</code> 内的动作。</p>
+<p><strong>动作</strong>：对满足条件的行执行的操作，通常是打印、计算等</p>
+<p>处理流程：</p>
+<p><code>awk</code> 读入文件的每一行，将整行存储在 <code>$0</code>，并根据分隔符将每个字段存入 <code>$1, $2, ...</code>。</p>
+<p>检查是否符合条件。</p>
+<p>如果符合条件，执行 <code>&#123;&#125;</code> 中的动作。</p>
+<p>对每一行重复以上步骤，直到文件结束。</p>
+<p>常用内建变量</p>
+<ul>
+<li><p>**<code>NF</code>**：表示当前行的字段总数。例如 <code>NF=3</code> 表示这一行有3个字段。</p>
+</li>
+<li><p>**<code>NR</code>**：表示当前处理的行号。</p>
+<p>**<code>FS</code>**：指定分隔符，默认是空格或Tab。</p>
+</li>
+</ul>
+<h1 id="shell"><a href="#shell" class="headerlink" title="shell"></a>shell</h1><p>在 Shell 编程中，控制流语句 <code>if</code>、<code>while</code>、<code>for</code>、<code>until</code>、<code>break</code> 和 <code>continue</code> 用于控制脚本的执行流程。下面是它们的用法和一些示例。</p>
+<h3 id="1-if-条件语句"><a href="#1-if-条件语句" class="headerlink" title="1. if 条件语句"></a>1. <code>if</code> 条件语句</h3><p>用于条件判断，根据判断结果执行不同的代码块。</p>
+<p><strong>语法：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy codeif [ 条件 ]; then</span><br><span class="line">    # 条件为真时执行</span><br><span class="line">elif [ 条件 ]; then</span><br><span class="line">    # 另一个条件为真时执行</span><br><span class="line">else</span><br><span class="line">    # 其他情况执行</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy code#!/bin/bash</span><br><span class="line"></span><br><span class="line">num=10</span><br><span class="line">if [ &quot;$num&quot; -gt 5 ]; then</span><br><span class="line">    echo &quot;num 大于 5&quot;</span><br><span class="line">elif [ &quot;$num&quot; -eq 5 ]; then</span><br><span class="line">    echo &quot;num 等于 5&quot;</span><br><span class="line">else</span><br><span class="line">    echo &quot;num 小于 5&quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-while-循环"><a href="#2-while-循环" class="headerlink" title="2. while 循环"></a>2. <code>while</code> 循环</h3><p><code>while</code> 循环在条件为真时重复执行代码块。</p>
+<p><strong>语法：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy codewhile [ 条件 ]; do</span><br><span class="line">    # 循环的代码块</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy code#!/bin/bash</span><br><span class="line"></span><br><span class="line">counter=1</span><br><span class="line">while [ &quot;$counter&quot; -le 5 ]; do</span><br><span class="line">    echo &quot;Counter: $counter&quot;</span><br><span class="line">    counter=$((counter + 1))</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-for-循环"><a href="#3-for-循环" class="headerlink" title="3. for 循环"></a>3. <code>for</code> 循环</h3><p>用于遍历列表或指定范围内的数字。</p>
+<p><strong>语法：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy codefor 变量 in 列表; do</span><br><span class="line">    # 循环的代码块</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy code#!/bin/bash</span><br><span class="line"></span><br><span class="line">for name in Alice Bob Carol; do</span><br><span class="line">    echo &quot;Hello, $name!&quot;</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-until-循环"><a href="#4-until-循环" class="headerlink" title="4. until 循环"></a>4. <code>until</code> 循环</h3><p><code>until</code> 循环在条件为假时重复执行代码块，和 <code>while</code> 循环相反。</p>
+<p><strong>语法：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy codeuntil [ 条件 ]; do</span><br><span class="line">    # 循环的代码块</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy code#!/bin/bash</span><br><span class="line"></span><br><span class="line">counter=1</span><br><span class="line">until [ &quot;$counter&quot; -gt 5 ]; do</span><br><span class="line">    echo &quot;Counter: $counter&quot;</span><br><span class="line">    counter=$((counter + 1))</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-break-语句"><a href="#5-break-语句" class="headerlink" title="5. break 语句"></a>5. <code>break</code> 语句</h3><p><code>break</code> 用于提前退出循环。</p>
+<p><strong>示例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy code#!/bin/bash</span><br><span class="line"></span><br><span class="line">for i in &#123;1..10&#125;; do</span><br><span class="line">    if [ &quot;$i&quot; -eq 5 ]; then</span><br><span class="line">        break  # 当 i 等于 5 时退出循环</span><br><span class="line">    fi</span><br><span class="line">    echo &quot;Number: $i&quot;</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-continue-语句"><a href="#6-continue-语句" class="headerlink" title="6. continue 语句"></a>6. <code>continue</code> 语句</h3><p><code>continue</code> 用于跳过当前循环的剩余部分，直接进入下一次循环。</p>
+<p><strong>示例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy code#!/bin/bash</span><br><span class="line"></span><br><span class="line">for i in &#123;1..10&#125;; do</span><br><span class="line">    if [ &quot;$i&quot; -eq 5 ]; then</span><br><span class="line">        continue  # 跳过当前循环，当 i 等于 5 时跳过</span><br><span class="line">    fi</span><br><span class="line">    echo &quot;Number: $i&quot;</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<p>Shell 函数在编写脚本时能帮助分解任务，组织代码，并提高代码的可读性和可维护性。以下是每个概念的基本用法和示例。</p>
+<h3 id="1-Shell-函数的定义方法"><a href="#1-Shell-函数的定义方法" class="headerlink" title="1. Shell 函数的定义方法"></a>1. Shell 函数的定义方法</h3><p>定义函数的基本语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy codefunction_name() &#123;</span><br><span class="line">    # 函数的主体</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>或使用 <code>function</code> 关键字：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy codefunction function_name &#123;</span><br><span class="line">    # 函数的主体</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy codegreet() &#123;</span><br><span class="line">    echo &quot;Hello, $1!&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-Shell-函数的参数传递、调用和返回值"><a href="#2-Shell-函数的参数传递、调用和返回值" class="headerlink" title="2. Shell 函数的参数传递、调用和返回值"></a>2. Shell 函数的参数传递、调用和返回值</h3><p>在 Shell 函数中，参数可以通过 <code>$1</code>、<code>$2</code> 等来访问，其中 <code>$1</code> 表示第一个参数，<code>$2</code> 表示第二个参数，依此类推。返回值通过 <code>return</code> 命令设定，但只能是整数值。</p>
+<p><strong>示例</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy codeadd() &#123;</span><br><span class="line">    local sum=$(( $1 + $2 ))</span><br><span class="line">    echo $sum  # 通过 echo 返回结果</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># 调用函数</span><br><span class="line">result=$(add 3 5)</span><br><span class="line">echo &quot;Result: $result&quot;</span><br></pre></td></tr></table></figure>
+
+<p><strong>返回状态</strong>（整数返回值）：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy codecheck_positive() &#123;</span><br><span class="line">    if [ $1 -gt 0 ]; then</span><br><span class="line">        return 0</span><br><span class="line">    else</span><br><span class="line">        return 1</span><br><span class="line">    fi</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># 使用返回状态</span><br><span class="line">check_positive 10</span><br><span class="line">if [ $? -eq 0 ]; then</span><br><span class="line">    echo &quot;Positive&quot;</span><br><span class="line">else</span><br><span class="line">    echo &quot;Non-positive&quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-Shell-函数的递归调用方法"><a href="#3-Shell-函数的递归调用方法" class="headerlink" title="3. Shell 函数的递归调用方法"></a>3. Shell 函数的递归调用方法</h3><p>Shell 支持递归调用，但应小心使用以避免无限递归。递归通常在计算阶乘、斐波那契数列等算法中使用。</p>
+<p><strong>示例</strong>：计算阶乘</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy codefactorial() &#123;</span><br><span class="line">    if [ $1 -le 1 ]; then</span><br><span class="line">        echo 1</span><br><span class="line">    else</span><br><span class="line">        local prev=$(factorial $(( $1 - 1 )))</span><br><span class="line">        echo $(( $1 * prev ))</span><br><span class="line">    fi</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># 调用递归函数</span><br><span class="line">result=$(factorial 5)</span><br><span class="line">echo &quot;Factorial of 5: $result&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-Shell-函数的嵌套调用"><a href="#4-Shell-函数的嵌套调用" class="headerlink" title="4. Shell 函数的嵌套调用"></a>4. Shell 函数的嵌套调用</h3><p>嵌套调用是指在一个函数内调用另一个函数。Shell 支持嵌套调用，适合在复杂的逻辑中分解子任务。</p>
+<p><strong>示例</strong>：嵌套调用函数</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bashCopy codeouter_function() &#123;</span><br><span class="line">    echo &quot;This is the outer function.&quot;</span><br><span class="line">    inner_function</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">inner_function() &#123;</span><br><span class="line">    echo &quot;This is the inner function.&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># 调用外部函数</span><br><span class="line">outer_function</span><br></pre></td></tr></table></figure>
+
+<p>嵌套调用对于实现模块化代码结构非常有帮助，可以在不同的函数中完成各自的任务，再组合成完整的流程。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Larissa</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/09/06/linux/">http://example.com/2024/09/06/linux/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">larissa的小宇宙</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/linux-%E9%B8%9F%E5%93%A5%E7%9A%84Linux-%E7%A7%81%E6%88%BF%E8%8F%9C/">linux 鸟哥的Linux 私房菜</a></div><div class="post_share"><div class="social-share" data-image="https://pic.imge.cc/2024/09/06/66d9e18f5bbd4.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/09/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" title="数据结构与算法"><img class="cover" src="https://pic.imge.cc/2024/09/06/66d9e2247e414.gif" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">数据结构与算法</div></div></a></div><div class="next-post pull-right"><a href="/2024/09/05/larinous-%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/" title="larinous 的碎碎念"><img class="cover" src="https://pic.imge.cc/2024/09/05/66d9a7e0eb7a0.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">larinous 的碎碎念</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://pic.imge.cc/2024/09/05/66d9a7e532c09.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Larissa</div><div class="author-info__description">不是每个人都能功成名就,不妨在日常生活的点滴中寻找生命的意义</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Larissani/Larissani.github.io"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Larissani" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #000000;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的博客</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E4%B8%8E%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">文件管理与常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E7%9B%AE%E5%BD%95%E9%85%8D%E7%BD%AE"><span class="toc-number">1.1.</span> <span class="toc-text">文件的目录配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8E%E7%9B%AE%E5%BD%95%E6%A0%91%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">1.1.1.</span> <span class="toc-text">文件系统与目录树的关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E6%A0%91%E7%9A%84%E8%AF%BB%E5%8F%96%E6%96%B9%E5%BC%8F"><span class="toc-number">1.1.2.</span> <span class="toc-text">目录树的读取方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95%E7%9A%84%E5%B8%83%E5%B1%80"><span class="toc-number">1.1.3.</span> <span class="toc-text">文件和目录的布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%92%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="toc-number">1.1.4.</span> <span class="toc-text">绝对路径和相对路径</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6-%E6%9D%83%E9%99%90-%EF%BC%88Linux5-2%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">文件-权限 （Linux5.2）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E4%B8%8E%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">1.2.1.</span> <span class="toc-text">用户与用户组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E8%AF%A6%E8%A7%A3"><span class="toc-number">1.2.2.</span> <span class="toc-text">文件属性详解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="toc-number">1.2.3.</span> <span class="toc-text">修改文件权限</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="toc-number">1.2.3.1.</span> <span class="toc-text">数字表示法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="toc-number">1.2.3.2.</span> <span class="toc-text">文字表示法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%89%80%E6%9C%89%E8%80%85"><span class="toc-number">1.2.4.</span> <span class="toc-text">修改文件所有者</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E9%BB%98%E8%AE%A4%E6%9D%83%E9%99%90"><span class="toc-number">1.2.5.</span> <span class="toc-text">文件默认权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%9D%83%E9%99%90"><span class="toc-number">1.2.6.</span> <span class="toc-text">特殊权限</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#SUID"><span class="toc-number">1.2.6.1.</span> <span class="toc-text">SUID</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E4%B8%8E%E5%88%A0%E9%99%A4SUID"><span class="toc-number">1.2.6.1.1.</span> <span class="toc-text">如何设置与删除SUID</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B0%8F%E5%86%99s-%E4%B8%8E%E5%A4%A7%E5%86%99S-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.2.6.1.2.</span> <span class="toc-text">小写s 与大写S 的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%9F%A5%E6%89%BE%E6%89%80%E6%9C%89%E4%BA%86%E8%AE%BE%E7%BD%AESUID-%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-number">1.2.6.1.3.</span> <span class="toc-text">如何查找所有了设置SUID 的文件</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SGID"><span class="toc-number">1.2.6.2.</span> <span class="toc-text">SGID</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SBIT"><span class="toc-number">1.2.6.3.</span> <span class="toc-text">SBIT</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#suid-sgid-sbit-%E8%AE%BE%E5%AE%9A"><span class="toc-number">1.2.6.4.</span> <span class="toc-text">suid sgid sbit 设定</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%83%E4%B9%A0"><span class="toc-number">1.2.6.4.1.</span> <span class="toc-text">练习</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86"><span class="toc-number">1.3.</span> <span class="toc-text">文件及文件管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.4.</span> <span class="toc-text">文件类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D"><span class="toc-number">1.4.1.</span> <span class="toc-text">文件扩展名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%90%8D%E7%9A%84%E8%A7%84%E5%88%99"><span class="toc-number">1.4.2.</span> <span class="toc-text">文件名的规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-number">1.4.3.</span> <span class="toc-text">目录操作命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-number">1.4.4.</span> <span class="toc-text">文件操作命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#cat"><span class="toc-number">1.4.4.1.</span> <span class="toc-text">cat</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#less"><span class="toc-number">1.4.4.2.</span> <span class="toc-text">less</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#touch-%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6-%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%97%B6%E9%97%B4%E6%A0%87%E7%AD%BE"><span class="toc-number">1.4.4.3.</span> <span class="toc-text">touch   创建文件&#x2F;修改文件时间标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cp-%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95"><span class="toc-number">1.4.4.4.</span> <span class="toc-text">cp    复制文件和目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mv-%E7%A7%BB%E5%8A%A8%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95"><span class="toc-number">1.4.4.5.</span> <span class="toc-text">mv   移动文件和目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rm-%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95"><span class="toc-number">1.4.4.6.</span> <span class="toc-text">rm   删除文件和目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sort"><span class="toc-number">1.4.4.7.</span> <span class="toc-text">sort</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#diff"><span class="toc-number">1.4.4.8.</span> <span class="toc-text">diff</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#wc"><span class="toc-number">1.4.4.9.</span> <span class="toc-text">wc</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%90%9C%E7%B4%A2"><span class="toc-number">1.4.5.</span> <span class="toc-text">文件搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E9%80%9A%E9%85%8D%E7%AC%A6"><span class="toc-number">1.4.5.1.</span> <span class="toc-text">文件通配符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E5%91%BD%E4%BB%A4"><span class="toc-number">1.4.5.2.</span> <span class="toc-text">文件查找命令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6find%E5%91%BD%E4%BB%A4"><span class="toc-number">1.4.5.2.1.</span> <span class="toc-text">查找指定文件find命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#locate-%E5%91%BD%E4%BB%A4%EF%BC%88%E9%80%9F%E5%BA%A6%E5%BF%AB%EF%BC%89"><span class="toc-number">1.4.5.2.2.</span> <span class="toc-text">locate 命令（速度快）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#where-is-%E5%91%BD%E4%BB%A4"><span class="toc-number">1.4.5.2.3.</span> <span class="toc-text">where is 命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#g-rep-%E5%91%BD%E4%BB%A4"><span class="toc-number">1.4.5.2.4.</span> <span class="toc-text">g rep 命令</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%92%8C%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5"><span class="toc-number">1.4.6.</span> <span class="toc-text">硬链接和符号链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E5%8E%8B%E7%BC%A9"><span class="toc-number">1.4.7.</span> <span class="toc-text">文件的压缩</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%BD%92%E6%A1%A3"><span class="toc-number">1.4.7.1.</span> <span class="toc-text">文件归档</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#tar"><span class="toc-number">1.4.7.1.1.</span> <span class="toc-text">tar</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#vim-%E4%BB%A5%E5%8F%8Ac-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7"><span class="toc-number">2.</span> <span class="toc-text">vim 以及c 开发工具</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#nano-%E7%9B%B8%E5%85%B3"><span class="toc-number">2.1.</span> <span class="toc-text">nano 相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4"><span class="toc-number">2.1.1.</span> <span class="toc-text">命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vim"><span class="toc-number">2.2.</span> <span class="toc-text">vim</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9A%82%E5%AD%98%E6%96%87%E4%BB%B6"><span class="toc-number">2.2.1.</span> <span class="toc-text">暂存文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%93%E5%B1%95%E5%8A%9F%E8%83%BD"><span class="toc-number">2.2.2.</span> <span class="toc-text">拓展功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gcc"><span class="toc-number">2.3.</span> <span class="toc-text">gcc</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.3.1.</span> <span class="toc-text"></span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E5%BA%93%E4%B8%8E%E5%8A%A8%E6%80%81%E5%BA%93"><span class="toc-number">2.4.</span> <span class="toc-text">静态库与动态库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E5%BA%93"><span class="toc-number">2.4.1.</span> <span class="toc-text">静态库</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93"><span class="toc-number">2.4.1.1.</span> <span class="toc-text">生成静态链接库</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E5%BA%93"><span class="toc-number">2.4.2.</span> <span class="toc-text">动态库</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93"><span class="toc-number">2.4.2.1.</span> <span class="toc-text">生成动态链接库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%87%E5%AE%9A%E5%8A%A8%E6%80%81%E5%BA%93%E8%B7%AF%E5%BE%84"><span class="toc-number">2.4.2.2.</span> <span class="toc-text">指定动态库路径</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git"><span class="toc-number">2.5.</span> <span class="toc-text">git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93"><span class="toc-number">2.5.1.</span> <span class="toc-text">创建版本库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E5%85%89%E6%9C%BA%E7%A9%BF%E6%A2%AD"><span class="toc-number">2.5.2.</span> <span class="toc-text">时光机穿梭</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#makefile"><span class="toc-number">2.6.</span> <span class="toc-text">makefile</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%84%E5%88%99"><span class="toc-number">2.6.1.</span> <span class="toc-text">规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">2.6.2.</span> <span class="toc-text">工作原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F"><span class="toc-number">2.6.3.</span> <span class="toc-text">变量</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F%EF%BC%9A"><span class="toc-number">2.6.3.1.</span> <span class="toc-text">自定义变量：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%84%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F"><span class="toc-number">2.6.3.2.</span> <span class="toc-text">预定义变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E5%8F%98%E9%87%8F"><span class="toc-number">2.6.3.3.</span> <span class="toc-text">自动变量</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D"><span class="toc-number">2.6.4.</span> <span class="toc-text">模式匹配</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-number">2.6.5.</span> <span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#wildcard"><span class="toc-number">2.6.5.1.</span> <span class="toc-text">wildcard</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#patsubst"><span class="toc-number">2.6.5.2.</span> <span class="toc-text">patsubst</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E5%92%8C%E7%BE%A4%E7%BB%84%E7%AE%A1%E7%90%86"><span class="toc-number">3.</span> <span class="toc-text">用户和群组管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E8%BF%87%E7%A8%8B"><span class="toc-number">3.1.</span> <span class="toc-text">用户登录过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7%E8%BF%87%E7%A8%8B"><span class="toc-number">3.2.</span> <span class="toc-text">新建用户过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE-password"><span class="toc-number">3.3.</span> <span class="toc-text">设置 password</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E7%94%A8%E6%88%B7%E8%B4%A6%E6%88%B7-usermod"><span class="toc-number">3.4.</span> <span class="toc-text">修改用户账户 usermod</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7%E8%B4%A6%E6%88%B7-userdel"><span class="toc-number">3.5.</span> <span class="toc-text">删除用户账户 userdel</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A6%81%E7%94%A8%E5%92%8C%E6%81%A2%E5%A4%8D%E7%94%A8%E6%88%B7%E8%B4%A6%E6%88%B7"><span class="toc-number">3.6.</span> <span class="toc-text">禁用和恢复用户账户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BE%A4%E7%BB%84%E6%9C%89%E5%85%B3%E6%93%8D%E4%BD%9C"><span class="toc-number">3.7.</span> <span class="toc-text">群组有关操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%87%E6%8D%A2%E7%94%A8%E6%88%B7"><span class="toc-number">3.8.</span> <span class="toc-text">切换用户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%99%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%B7%BB%E5%8A%A0sudo"><span class="toc-number">3.9.</span> <span class="toc-text">给普通用户添加sudo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E4%B8%8E%E4%BF%AE%E6%94%B9%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81"><span class="toc-number">3.10.</span> <span class="toc-text">批量创建用户与修改用户密码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">3.11.</span> <span class="toc-text">正则表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%83%E5%AD%97%E7%AC%A6"><span class="toc-number">3.11.1.</span> <span class="toc-text">元字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E5%86%99%E5%AD%97%E7%AC%A6%E9%9B%86"><span class="toc-number">3.11.2.</span> <span class="toc-text">简写字符集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sed-%E7%BC%96%E8%AF%91%E5%99%A8"><span class="toc-number">3.11.3.</span> <span class="toc-text">sed 编译器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-number">3.11.3.1.</span> <span class="toc-text">常用的操作命令</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#awk"><span class="toc-number">3.11.4.</span> <span class="toc-text">awk</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#shell"><span class="toc-number">4.</span> <span class="toc-text">shell</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-if-%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5"><span class="toc-number">4.0.1.</span> <span class="toc-text">1. if 条件语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-while-%E5%BE%AA%E7%8E%AF"><span class="toc-number">4.0.2.</span> <span class="toc-text">2. while 循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-for-%E5%BE%AA%E7%8E%AF"><span class="toc-number">4.0.3.</span> <span class="toc-text">3. for 循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-until-%E5%BE%AA%E7%8E%AF"><span class="toc-number">4.0.4.</span> <span class="toc-text">4. until 循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-break-%E8%AF%AD%E5%8F%A5"><span class="toc-number">4.0.5.</span> <span class="toc-text">5. break 语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-continue-%E8%AF%AD%E5%8F%A5"><span class="toc-number">4.0.6.</span> <span class="toc-text">6. continue 语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Shell-%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95"><span class="toc-number">4.0.7.</span> <span class="toc-text">1. Shell 函数的定义方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Shell-%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92%E3%80%81%E8%B0%83%E7%94%A8%E5%92%8C%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="toc-number">4.0.8.</span> <span class="toc-text">2. Shell 函数的参数传递、调用和返回值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Shell-%E5%87%BD%E6%95%B0%E7%9A%84%E9%80%92%E5%BD%92%E8%B0%83%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">4.0.9.</span> <span class="toc-text">3. Shell 函数的递归调用方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Shell-%E5%87%BD%E6%95%B0%E7%9A%84%E5%B5%8C%E5%A5%97%E8%B0%83%E7%94%A8"><span class="toc-number">4.0.10.</span> <span class="toc-text">4. Shell 函数的嵌套调用</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/09/23/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80/" title="软件工程基础"><img src="https://pic.imge.cc/2024/09/06/66d9e21674932.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="软件工程基础"/></a><div class="content"><a class="title" href="/2024/09/23/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80/" title="软件工程基础">软件工程基础</a><time datetime="2024-09-23T07:51:30.000Z" title="发表于 2024-09-23 15:51:30">2024-09-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" title="数据结构与算法"><img src="https://pic.imge.cc/2024/09/06/66d9e2247e414.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据结构与算法"/></a><div class="content"><a class="title" href="/2024/09/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" title="数据结构与算法">数据结构与算法</a><time datetime="2024-09-09T07:35:48.000Z" title="发表于 2024-09-09 15:35:48">2024-09-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/06/linux/" title="linux"><img src="https://pic.imge.cc/2024/09/06/66d9e18f5bbd4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="linux"/></a><div class="content"><a class="title" href="/2024/09/06/linux/" title="linux">linux</a><time datetime="2024-09-06T09:55:05.000Z" title="发表于 2024-09-06 17:55:05">2024-09-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/05/larinous-%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/" title="larinous 的碎碎念"><img src="https://pic.imge.cc/2024/09/05/66d9a7e0eb7a0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="larinous 的碎碎念"/></a><div class="content"><a class="title" href="/2024/09/05/larinous-%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/" title="larinous 的碎碎念">larinous 的碎碎念</a><time datetime="2024-09-05T08:46:14.000Z" title="发表于 2024-09-05 16:46:14">2024-09-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/05/python/" title="python"><img src="https://pic.imge.cc/2024/09/06/66d9e2247e414.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python"/></a><div class="content"><a class="title" href="/2024/09/05/python/" title="python">python</a><time datetime="2024-09-05T08:23:12.000Z" title="发表于 2024-09-05 16:23:12">2024-09-05</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://pic.imge.cc/2024/09/06/66d9e18f5bbd4.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2024 By Larissa</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欢迎来到larissa的cs小宇宙!</div></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
